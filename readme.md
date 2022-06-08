@@ -1,0 +1,1 @@
+# segmentation lésion pulmonaires
