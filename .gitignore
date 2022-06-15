@@ -1,1 +1,9 @@
 .env
+images
+masks
+frames
+test
+train
+val
+unet.h5
+.ipynb_checkpoints
