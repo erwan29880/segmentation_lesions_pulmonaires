@@ -31,14 +31,22 @@ Les données sont entraînées sur 4 epochs.
 ## Etape 6:
 
 Au bout de 3 'Epochs', nous obtenons : 
-> acc: 0.9919 - recall: 0.7169 - precision: 0.9064 - f1-score: 0.8122  
+> val_loss: 0.0124 - val_acc: 0.9956 - val_recall_1: 0.8132 - val_precision_1: 0.8542 - val_f1-score: 0.8297 
 
 #### Récapitulatif des métriques :   
 
 ![img](./images2/f1.png) 
+![img](./images2/precision.png) 
+![img](./images2/recall.png) 
+![img](./images2/recallprecision.png)
 ![img](./images2/acc.png)
 ![img](./images2/loss.png)
-![img](./images2/recallprecision.png)
+
+
+A la première itération, puis après 3 itérations, la balance entre recall et précision semble optimale pour ce jeu de données. Le F1-score donne une bonne indication pour ce cas entre recall et précision (scores sensiblement équivalents).   
+Le projet ne définit pas quelle métrique entre la précision (détecter le plus d'anomalies possibles, quitte à avoir souvent des interventions humaines de vérification), et le recall (fiabilité des détections, quitte à ne pas détecter quelques lésions) doivent être maximisés. Nous arrêtons l'apprentissage à ce stade.  
+
+
 
 ## Etape 7:
 
